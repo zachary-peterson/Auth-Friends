@@ -51,7 +51,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-function authenticator(req, res, next) {
+function authenticator (req, res, next) {
   const { authorization } = req.headers;
   if (authorization === token) {
     next();
@@ -125,7 +125,7 @@ app.delete('/api/friends/:id', authenticator, (req, res) => {
   res.send(friends);
 });
 
-function getNextId() {
+function getNextId () {
   return nextId++;
 }
 
