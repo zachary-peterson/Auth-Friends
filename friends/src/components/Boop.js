@@ -5,5 +5,5 @@ export const Boop = () => {
     <div>
       <h1>It's working, it's working...</h1>
     </div>
-)
+  )
 }
